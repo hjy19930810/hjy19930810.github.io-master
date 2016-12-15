@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>jquery滚动条回顶</title>
+	<style>
+		body,div,p{
+		margin:0;padding:0;
+		}
+		body{
+			font-family:"微软雅黑",Verdana, Arial, Helvetica, sans-serif;
+	    }
+	    .scroll{
+	    width: 70px;
+	    height: 70px;
+	    background: #64bfae;
+	    color: #fff;
+	    line-height: 70px;
+	    text-align: center;
+	    position: fixed;
+	    right:30px;
+	 	bottom:50px;
+	 	cursor: pointer;
+	 	font-size:14px;
+	 }
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(window).scroll(function(){
+				var scrollValue=$(window).scrollTop();
+				scrollValue>100?$('div.scroll').fadeIn():$('div.scroll').fadeOut();
+			})
+			$('#scroll').click(function(){
+				$('html,body').animate({scrollTop:0},200)
+			})
+		})
+	</script>
+</head>
+<body>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p>
+	<p>向下拉滚动条</p>
+	<p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p>
+	<p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p>
+	<p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p><p>Hello</p><p>向下拉滚动条</p>
+	<div class="scroll" id="scroll" style="display: none;">回到顶部</div>
+	
+</body>
+</html>
